@@ -1,0 +1,8 @@
+-cs src\psm-cs-gen
+-cp src\psm
+-cp src\psm-lib
+-main Main
+--remap nme:psm
+--remap flash:psm
+-D psm
+-D no-compilation

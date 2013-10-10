@@ -1,0 +1,11 @@
+void main (	
+	float2 in v_TexCoord  		: TEXCOORD0,
+	float4 in v_VertexColor 	: COLOR0,
+
+    float4 out color      		: COLOR,
+    
+    uniform sampler2D s_Texture : TEXUNIT0
+)
+{
+	color = tex2D( s_Texture, v_TexCoord ) * v_VertexColor;
+}
